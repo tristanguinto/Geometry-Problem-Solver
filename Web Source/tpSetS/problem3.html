@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html>
+
+<style>
+    
+    input[type=float], select {
+        width:50px;
+        padding: 6px 10px;
+        margin: 40px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    input[type=submit]{
+        background-color: #4BB1FF;
+        width: 100%;
+        padding: 12px 20px;
+        margin: 40px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        position: absolute;
+        right:270px;
+        top: 750px;
+    }
+
+    div.lca{
+        position: relative;
+        bottom: 30px;
+        left: 270px;
+        z-index:0;
+    }
+
+    div.rca{
+        position:absolute;
+        top: 0px;
+        left:830px;
+        z-index:0;
+    }
+
+    div.d2{
+        position: absolute;
+        top: 200px;
+        left: 100px;
+        z-index:0;
+    }
+
+    div.d1{
+        position: absolute;
+        top: 130px;
+        left: 650px;
+        z-index:0;
+    }
+
+    div.r2{
+        position: absolute;
+        top:220px;
+        left:200px;
+        z-index:0;
+    }
+
+    div.r1{
+        position: absolute;
+        top:200px;
+        left: 500px;
+        z-index:0;
+    }
+
+    div.x{
+        position: absolute;
+        top:290px;
+        left:355px;
+        z-index:0;
+    }
+
+    div.p1{
+        position: absolute;
+        top: 340px;
+        left:640px;
+        z-index: 0;
+
+    }
+
+    div.p2{
+        position: absolute;
+        top:350px;
+        left: 40px;
+        z-index: 0;
+    }
+
+    div.tip{
+        position: absolute;
+        top: 80px;
+        left: 330px;
+        z-index: 0;
+    }
+
+    div.bip{
+        position: absolute;
+        top: 570px;
+        left:330px;
+        z-index:0;
+    }
+
+    img{
+        position: absolute;
+        left: 0px;
+        top: 100px;
+        z-index: -1;
+    }
+</style>
+
+
+<body>
+
+<h1>Problem 3: 2 Circles Intersecting</h1>
+<h3>Insert the values you know and then hit solve to see what can be found from your values!</h3>
+<h3>Leave values as blank if you do not know them</h3>
+
+
+<form method="GET" action="../tpSetS/WEB-INF/cgi/problem3Solved.py">
+    <div class="lca">
+            <input name="lca" type = "float" value="">    
+    
+            <div class="rca">
+                <input name="rca" type = "float" value="">      
+            </div>
+     
+            <div class="d2">
+                    <input name="d2" type = "float" value="">      
+            </div>
+            
+            <div class="d1">
+                    <input name="d1" type = "float" value="">      
+            </div>
+
+            <div class="r2">
+                    <input name="r2" type = "float" value="">      
+            </div>
+            <div class="r1">
+                    <input name="r1" type = "float" value="">      
+            </div>
+            <div class="x">
+                    <input name="x" type = "float" value="">      
+            </div>
+
+            <div class="p2">
+            <input name="p2x" type = "float" value=""> , <input name="p2y" type = "float" value="" >
+            </div>
+
+            <div class="tip">
+                <input name="tipx" type = "float" value=""> , <input name="tipy" type = "float" value="" >
+            </div>
+
+            <div class="bip">
+                <input name="bipx" type = "float" value=""> , <input name="bipy" type = "float" value="" >
+            </div>
+
+            <div class="p1">
+                    <input name="p1x" type = "float" value=""> , <input name="p1y" type = "float" value="" >
+            </div>
+
+
+
+    <input type="submit" value = "Solve">
+    </div>
+<img src="problem 3v4.png" alt="problem 3">
+</body>
+
+
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+
+<title>Problem 1: Circle in Triangle</title>
+
+<style>
+    
+    input[type=float], select {
+        width:50px;
+        padding: 6px 10px;
+        margin: 40px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    input[type=submit]{
+        background-color: #4BB1FF;
+        width: 100%;
+        padding: 12px 20px;
+        margin: 40px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        position: absolute;
+        right:650px;
+        bottom: -750px;
+    }
+
+    div.relative_a{
+        position: relative;
+        top:-80px;
+        left: 650px;
+        z-index:0;
+    }    
+    div.absolute_b{
+        position: absolute;
+        top:450px;
+        left: 450px;
+        z-index:0;
+    }    
+    div.absolute_c{
+        position: absolute;
+        top: 580px;
+        left: -470px;
+        z-index:0;
+    }    
+    div.absolute_A{
+        position: absolute;
+        top: 130px;
+        left: 220px;
+        z-index:0;
+    }
+    div.absolute_B{
+        position: absolute;
+        top:570px;
+        left: -200px;
+        z-index:0;
+    }
+    div.absolute_C{
+        position: absolute;
+        top:250px;
+        left: -290px;
+        z-index:0;
+    }
+    div.absolute_x{
+        position: absolute;
+        top:100px;
+        left: -50px;
+        z-index:0;
+    }
+    div.absolute_y{
+        position: absolute;
+        top:400px;
+        left: 350px;
+        z-index:0;
+    }
+    div.absolute_z{
+        position: absolute;
+        top:510px;
+        left: -355px;
+        z-index:0;
+    }
+ 
+    div.absolute_H{
+        position: absolute;
+        top:130px;
+        left: 530px;
+        z-index:0;
+    }
+
+    div.absolute_r{
+        position: absolute;
+        top:175px;
+        left: 20px;
+        z-index:0;
+    }
+
+    div.absolute_d{
+        position: absolute;
+        top:350px;
+        left: -115px;
+        z-index:0;
+    }
+
+    div.absolute_p{
+        position: absolute;
+        top: 330px;
+        left: 20px;
+        z-index:0;
+    }
+    
+    div.absolute_ip1{
+        position: absolute;
+        top: 250px;
+        left: -180px;
+        z-index:0;
+    }
+
+    div.absolute_ip2{
+        position: absolute;
+        top: 225px;
+        left: 60px;
+        z-index:0;
+    }
+
+    div.absolute_ip3{
+        position: absolute;
+        top: 480px;
+        left: 180px;
+        z-index:0;
+    }
+
+    div.absolute_ip4{
+        position: absolute;
+        top: 512px;
+        left: -90px;
+        z-index:0;
+    }
+
+    div.absolute_AC{
+        position: absolute;
+        top:596px;
+        left:360px;
+        z-index: 0;
+    }
+
+    div.absolute_AT{
+        position: absolute;
+        top: 630px;
+        left: 380px;
+    }
+
+
+    img{
+        position: absolute;
+        left: 0px;
+        top: 50px;
+        z-index: -1;
+
+    }
+
+</style>
+
+<body>
+<h1>Problem 1: Circle in Triangle</h1>
+<h3>Insert the values you know and then hit solve to see what can be found from your values!</h3>
+<h3>Leave values as blank if you do not know them</h3>
+
+<form method="GET" action="../tpSetS/WEB-INF/cgi/problem1Solved.py">
+
+
+<div class="relative_a">
+    <input name="ax" type = "float" value=""> , <input name="ay" type = "float" value="" >
+
+
+<div class="absolute_b">
+    <input name="bx" type = "float" value=""> , <input name="by" type = "float" value="">
+</div>
+
+<div class="absolute_c">
+    <input name="cx" type = "float" value=""> , <input name="cy" type = "float" value="">
+</div>
+ 
+<div class="absolute_p">
+    <input name="px" type = "float" value=""> , <input name="py" type = "float" value="">
+</div>
+ 
+<div class="absolute_ip1">
+    <input name="ip1x" type = "float" value=""> , <input name="ip1y" type = "float" value="">
+</div>
+ 
+<div class="absolute_ip2">
+    <input name="ip2x" type = "float" value=""> , <input name="ip2y" type = "float" value="">
+</div>
+
+<div class="absolute_ip3">   
+    <input name="ip3x" type = "float" value=""> , <input name="ip3y" type = "float" value="">  
+</div>
+
+<div class="absolute_ip4">        
+    <input name="ip4x" type = "float" value=""> , <input name="ip4y" type = "float" value="">    
+</div>
+
+<div class="absolute_A">
+    <input name="A" type = "float" value="">    
+</div>
+ 
+<div class="absolute_B">
+    <input name="B" type = "float" value="">  
+</div>
+
+<div class="absolute_C">
+    <input name="C" type = "float" value="">   
+</div>
+   
+<div class="absolute_x">
+    <input name="x" type = "float" value="">   
+</div>
+
+<div class="absolute_y">
+    <input name="y" type = "float" value="">    
+</div>
+
+<div class="absolute_z">
+    <input name="z" type = "float" value="">   
+</div>
+ 
+<div class="absolute_H">
+    <input name="H" type = "float" value="">  
+</div>
+
+<div class="absolute_r">
+    <input name="r" type = "float" value="">  
+</div>
+
+<div class="absolute_d">
+    <input name="d" type = "float" value="">
+</div>
+
+<div class="absolute_AC">
+    <input name="AC" type = "float" value="">
+</div>
+<div class="absolute_AT">
+    <input name="AT" type = "float" value="">
+</div>
+
+
+<input type="submit" value = "Solve">
+</form>
+</div>
+
+<img src="problem 1v2.png" alt="problem 1">
+
+
+</body>
+
+</html>
